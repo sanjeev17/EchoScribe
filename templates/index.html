@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder & Transcriber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Audio Recorder & Transcriber</h1>
+
+        <div class="record-section">
+            <h2>🎤 Record Audio</h2>
+            <button id="startRecording">Start Recording</button>
+            <button id="pauseRecording" class="hidden">Pause</button>
+            <button id="stopRecording" class="hidden">Stop & Save</button>
+            <p id="recordingIndicator" class="hidden">🔴 Recording...</p>
+            <p id="processingText" class="hidden">Processing...</p>
+            <div id="transcriptionPanel" class="hidden">
+                <h3>Transcription:</h3>
+                <p id="transcriptionText"></p>
+            </div>
+        </div>
+
+        <div class="upload-section">
+            <h2>📂 Upload Audio File</h2>
+            <input type="file" id="audioFile">
+            <button id="uploadFile">Upload & Transcribe</button>
+            <div id="uploadTranscriptionPanel" class="hidden">
+                <h3>Uploaded File Transcription:</h3>
+                <p id="uploadTranscriptionText"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

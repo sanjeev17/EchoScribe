@@ -104,7 +104,7 @@ This method gives you the choice to either launch the web server or record direc
 
 **2. The Web Recorder Interface**
 *This is how the page looks after you click "Start Recording".*
-![Recording Interface](recorder.png)
+![Recording Interface](after starting the recorder.png)
 
 <br>
 
